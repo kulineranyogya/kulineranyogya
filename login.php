@@ -51,29 +51,21 @@
 
 
     <!-- Body -->
-    <div class="form-signin text-center pt-5">
-        <form>
-            <h2 class="login-text fw-bold pb-3">Login</h2>
-            <div class="pt-5">
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                    <label for="floatingInput">Email address</label>
+    <div class="container">
+        <div class="login-text text-center">
+            <form action="" class="login-email">
+                <p class="login-text">Login dengan email</p>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
                 </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
                 </div>
-
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
+                <div class="input-group">
+                    <button class="btn">Login</button>
                 </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                <p class="login-register-text pt-3">Tidak punya akun? <a href="register.php">Daftar di sini</a></p>
-
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <!-- Akhir Body -->
 

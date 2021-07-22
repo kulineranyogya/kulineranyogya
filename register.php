@@ -19,7 +19,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="signinout.css">
+    <link rel="stylesheet" type="text/css" href="signinout.css">
 
     <title>Kulineran Yogya</title>
 
@@ -51,30 +51,27 @@
 
 
     <!-- Body -->
-    <div class="form-signin text-center pt-5">
-        <form>
-            <h2 class="login-text fw-bold pb-3">Daftar</h2>
-            <div class="pt-5">
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
-                </div>
 
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                <p class="login-register-text pt-3">Tidak punya akun? <a href="register.php">Daftar di sini</a></p>
-
+    <form class="login-email text-center pt-5">
+        <h2 class="login-text fw-bold pb-3">Daftar</h2>
+        <div class="pt-5">
+            <div class="input-group">
+                <input type="text" placeholder="Username" name="username" required>
             </div>
-        </form>
-    </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Confirm Password" name="cpassword" required>
+            </div>
+            <button class="w-25 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <p class="login-register-text pt-3">Sudah punya akun? <a href="login.php">Login di sini</a></p>
+        </div>
+    </form>
+
     <!-- Akhir Body -->
 
     <!-- Footer -->

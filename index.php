@@ -56,7 +56,7 @@
       </div>
       <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
         <h1 class="display-5 fw-bold lh-sm mb-3">Jelajahi kuliner khas <span class="text-oren">Yogyakarta</span>
-          dengan biaya Rp0</h1>
+          dengan mudah</h1>
         <p class="lead">Jelajahi ragam kuliner khas yogyakarta
           dan temukan tempat makan terbaik
           untuk menikmatinya</p>
