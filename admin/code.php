@@ -27,8 +27,20 @@ if (isset($_POST['registerbtn'])) {
     }
 }
 
-if (isset($_POST['edit_btn'])) {
+if (isset($_POST['updatebtn'])) {
     $id = $_POST['edit_id'];
-    $query = "SELECT * FROM register WHERE id='$id' ";
+    $username = $_POST['edit_username'];
+    $email = $_POST['edit_email'];
+    $password = $_POST['edit_password'];
+
+    $query = "UPDATE register SET username='$username', email='$email', password='$password' WHERE id='$id' ";
     $query_run = mysqli_query($connection, $query);
+
+    if ($query_run) {
+        $_SESSION['success'] = "Your data is updated";
+        header('register.php');
+    } else {
+        $_SESSION['success'] = "Your data is not updated";
+        header('register.php');
+    }
 }
